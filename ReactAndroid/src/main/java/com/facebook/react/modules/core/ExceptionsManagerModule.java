@@ -51,7 +51,7 @@ public class ExceptionsManagerModule extends BaseJavaModule {
     if (mDevSupportManager.getDevSupportEnabled()) {
       mDevSupportManager.showNewJSError(title, details, exceptionId);
     } else {
-      throw new JavascriptException(JSStackTrace.format(title, details));
+      //throw new JavascriptException(JSStackTrace.format(title, details));
     }
   }
 

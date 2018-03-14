@@ -88,8 +88,8 @@ import javax.annotation.Nullable;
         }
       } catch (Throwable t) {
         FLog.e(ViewManager.class, "Error while updating prop " + mPropName, t);
-        throw new JSApplicationIllegalArgumentException("Error while updating property '" +
-            mPropName + "' of a view managed by: " + viewManager.getName(), t);
+        //throw new JSApplicationIllegalArgumentException("Error while updating property '" +
+        //    mPropName + "' of a view managed by: " + viewManager.getName(), t);
       }
     }
 
@@ -109,8 +109,8 @@ import javax.annotation.Nullable;
         }
       } catch (Throwable t) {
         FLog.e(ViewManager.class, "Error while updating prop " + mPropName, t);
-        throw new JSApplicationIllegalArgumentException("Error while updating property '" +
-            mPropName + "' in shadow node of type: " + nodeToUpdate.getViewClass(), t);
+        //throw new JSApplicationIllegalArgumentException("Error while updating property '" +
+        //    mPropName + "' in shadow node of type: " + nodeToUpdate.getViewClass(), t);
       }
     }
 
